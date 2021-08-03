@@ -1,2 +1,2 @@
-meta_package:test_launch:tutorial_beginner
+meta_package:test_launch:tf_package:tutorial_beginner
 -DCATKIN_DEVEL_PREFIX=/home/sklir/ZHANGYan/ros_tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/sklir/ZHANGYan/ros_tutorial/install -G Unix Makefiles
