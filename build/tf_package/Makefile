@@ -77,17 +77,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -98,6 +87,17 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -164,6 +164,36 @@ preinstall/fast:
 depend:
 	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+tf_package/CMakeFiles/static_subscriber.dir/rule:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tf_package/CMakeFiles/static_subscriber.dir/rule
+.PHONY : tf_package/CMakeFiles/static_subscriber.dir/rule
+
+# Convenience name for target.
+static_subscriber: tf_package/CMakeFiles/static_subscriber.dir/rule
+
+.PHONY : static_subscriber
+
+# fast build rule for target.
+static_subscriber/fast:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_subscriber.dir/build.make tf_package/CMakeFiles/static_subscriber.dir/build
+.PHONY : static_subscriber/fast
+
+# Convenience name for target.
+tf_package/CMakeFiles/static_publisher.dir/rule:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tf_package/CMakeFiles/static_publisher.dir/rule
+.PHONY : tf_package/CMakeFiles/static_publisher.dir/rule
+
+# Convenience name for target.
+static_publisher: tf_package/CMakeFiles/static_publisher.dir/rule
+
+.PHONY : static_publisher
+
+# fast build rule for target.
+static_publisher/fast:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_publisher.dir/build.make tf_package/CMakeFiles/static_publisher.dir/build
+.PHONY : static_publisher/fast
 
 # Convenience name for target.
 tf_package/CMakeFiles/actionlib_generate_messages_py.dir/rule:
@@ -374,6 +404,21 @@ geometry_msgs_generate_messages_eus: tf_package/CMakeFiles/geometry_msgs_generat
 geometry_msgs_generate_messages_eus/fast:
 	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make tf_package/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+tf_package/CMakeFiles/dynamic_publisher.dir/rule:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tf_package/CMakeFiles/dynamic_publisher.dir/rule
+.PHONY : tf_package/CMakeFiles/dynamic_publisher.dir/rule
+
+# Convenience name for target.
+dynamic_publisher: tf_package/CMakeFiles/dynamic_publisher.dir/rule
+
+.PHONY : dynamic_publisher
+
+# fast build rule for target.
+dynamic_publisher/fast:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/dynamic_publisher.dir/build.make tf_package/CMakeFiles/dynamic_publisher.dir/build
+.PHONY : dynamic_publisher/fast
 
 # Convenience name for target.
 tf_package/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
@@ -690,6 +735,87 @@ tf2_msgs_generate_messages_eus/fast:
 	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make tf_package/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
+src/dynamic_publisher.o: src/dynamic_publisher.cpp.o
+
+.PHONY : src/dynamic_publisher.o
+
+# target to build an object file
+src/dynamic_publisher.cpp.o:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/dynamic_publisher.dir/build.make tf_package/CMakeFiles/dynamic_publisher.dir/src/dynamic_publisher.cpp.o
+.PHONY : src/dynamic_publisher.cpp.o
+
+src/dynamic_publisher.i: src/dynamic_publisher.cpp.i
+
+.PHONY : src/dynamic_publisher.i
+
+# target to preprocess a source file
+src/dynamic_publisher.cpp.i:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/dynamic_publisher.dir/build.make tf_package/CMakeFiles/dynamic_publisher.dir/src/dynamic_publisher.cpp.i
+.PHONY : src/dynamic_publisher.cpp.i
+
+src/dynamic_publisher.s: src/dynamic_publisher.cpp.s
+
+.PHONY : src/dynamic_publisher.s
+
+# target to generate assembly for a file
+src/dynamic_publisher.cpp.s:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/dynamic_publisher.dir/build.make tf_package/CMakeFiles/dynamic_publisher.dir/src/dynamic_publisher.cpp.s
+.PHONY : src/dynamic_publisher.cpp.s
+
+src/static_publisher.o: src/static_publisher.cpp.o
+
+.PHONY : src/static_publisher.o
+
+# target to build an object file
+src/static_publisher.cpp.o:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_publisher.dir/build.make tf_package/CMakeFiles/static_publisher.dir/src/static_publisher.cpp.o
+.PHONY : src/static_publisher.cpp.o
+
+src/static_publisher.i: src/static_publisher.cpp.i
+
+.PHONY : src/static_publisher.i
+
+# target to preprocess a source file
+src/static_publisher.cpp.i:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_publisher.dir/build.make tf_package/CMakeFiles/static_publisher.dir/src/static_publisher.cpp.i
+.PHONY : src/static_publisher.cpp.i
+
+src/static_publisher.s: src/static_publisher.cpp.s
+
+.PHONY : src/static_publisher.s
+
+# target to generate assembly for a file
+src/static_publisher.cpp.s:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_publisher.dir/build.make tf_package/CMakeFiles/static_publisher.dir/src/static_publisher.cpp.s
+.PHONY : src/static_publisher.cpp.s
+
+src/static_subscriber.o: src/static_subscriber.cpp.o
+
+.PHONY : src/static_subscriber.o
+
+# target to build an object file
+src/static_subscriber.cpp.o:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_subscriber.dir/build.make tf_package/CMakeFiles/static_subscriber.dir/src/static_subscriber.cpp.o
+.PHONY : src/static_subscriber.cpp.o
+
+src/static_subscriber.i: src/static_subscriber.cpp.i
+
+.PHONY : src/static_subscriber.i
+
+# target to preprocess a source file
+src/static_subscriber.cpp.i:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_subscriber.dir/build.make tf_package/CMakeFiles/static_subscriber.dir/src/static_subscriber.cpp.i
+.PHONY : src/static_subscriber.cpp.i
+
+src/static_subscriber.s: src/static_subscriber.cpp.s
+
+.PHONY : src/static_subscriber.s
+
+# target to generate assembly for a file
+src/static_subscriber.cpp.s:
+	cd /home/sklir/ZHANGYan/ros_tutorial/build && $(MAKE) -f tf_package/CMakeFiles/static_subscriber.dir/build.make tf_package/CMakeFiles/static_subscriber.dir/src/static_subscriber.cpp.s
+.PHONY : src/static_subscriber.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -698,8 +824,10 @@ help:
 	@echo "... depend"
 	@echo "... list_install_components"
 	@echo "... test"
-	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... static_subscriber"
+	@echo "... install/local"
+	@echo "... static_publisher"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... actionlib_generate_messages_nodejs"
@@ -716,6 +844,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... dynamic_publisher"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
@@ -738,6 +867,15 @@ help:
 	@echo "... install"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... src/dynamic_publisher.o"
+	@echo "... src/dynamic_publisher.i"
+	@echo "... src/dynamic_publisher.s"
+	@echo "... src/static_publisher.o"
+	@echo "... src/static_publisher.i"
+	@echo "... src/static_publisher.s"
+	@echo "... src/static_subscriber.o"
+	@echo "... src/static_subscriber.i"
+	@echo "... src/static_subscriber.s"
 .PHONY : help
 
 

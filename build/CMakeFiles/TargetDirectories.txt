@@ -38,8 +38,10 @@
 /home/sklir/ZHANGYan/ros_tutorial/build/meta_package/CMakeFiles/test.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/list_install_components.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/test.dir
-/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/install/local.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/install/strip.dir
+/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/static_subscriber.dir
+/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/install/local.dir
+/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/static_publisher.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/actionlib_generate_messages_py.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/rebuild_cache.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/actionlib_generate_messages_nodejs.dir
@@ -56,6 +58,7 @@
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/actionlib_msgs_generate_messages_py.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/dynamic_publisher.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/sklir/ZHANGYan/ros_tutorial/build/tf_package/CMakeFiles/geometry_msgs_generate_messages_lisp.dir

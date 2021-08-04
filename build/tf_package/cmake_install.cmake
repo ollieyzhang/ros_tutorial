@@ -47,3 +47,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/tf_package" TYPE FILE FILES "/home/sklir/ZHANGYan/ros_tutorial/src/tf_package/package.xml")
 endif()
 
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/tf_package" TYPE PROGRAM FILES "/home/sklir/ZHANGYan/ros_tutorial/build/tf_package/catkin_generated/installspace/static_publisher_p.py")
+endif()
+

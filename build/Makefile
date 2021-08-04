@@ -296,6 +296,32 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named static_subscriber
+
+# Build rule for target.
+static_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static_subscriber
+.PHONY : static_subscriber
+
+# fast build rule for target.
+static_subscriber/fast:
+	$(MAKE) -f tf_package/CMakeFiles/static_subscriber.dir/build.make tf_package/CMakeFiles/static_subscriber.dir/build
+.PHONY : static_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named static_publisher
+
+# Build rule for target.
+static_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static_publisher
+.PHONY : static_publisher
+
+# fast build rule for target.
+static_publisher/fast:
+	$(MAKE) -f tf_package/CMakeFiles/static_publisher.dir/build.make tf_package/CMakeFiles/static_publisher.dir/build
+.PHONY : static_publisher/fast
+
+#=============================================================================
 # Target rules for targets named actionlib_generate_messages_py
 
 # Build rule for target.
@@ -476,6 +502,19 @@ geometry_msgs_generate_messages_eus: cmake_check_build_system
 geometry_msgs_generate_messages_eus/fast:
 	$(MAKE) -f tf_package/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make tf_package/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named dynamic_publisher
+
+# Build rule for target.
+dynamic_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dynamic_publisher
+.PHONY : dynamic_publisher
+
+# fast build rule for target.
+dynamic_publisher/fast:
+	$(MAKE) -f tf_package/CMakeFiles/dynamic_publisher.dir/build.make tf_package/CMakeFiles/dynamic_publisher.dir/build
+.PHONY : dynamic_publisher/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
@@ -1176,6 +1215,8 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... static_subscriber"
+	@echo "... static_publisher"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_lisp"
@@ -1190,6 +1231,7 @@ help:
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... dynamic_publisher"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_lisp"
