@@ -1,0 +1,7 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dr_client" pkg="dynamic_config" type="dr_client">
+  <param name="init_param" type="int" value="10" />
+</node>
+\endverbatim
+
