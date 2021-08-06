@@ -14,7 +14,8 @@
         "/home/sklir/catkin_ws/src/franka_ros/franka_gripper/include/**",
         "/home/sklir/catkin_ws/src/franka_ros/franka_hw/include/**",
         "/usr/include/**",
-        "/home/sklir/ZHANGYan/ros_tutorial/devel/include/**"
+        "/home/sklir/ZHANGYan/ros_tutorial/devel/include/**",
+        "/home/sklir/ZHANGYan/ros_tutorial/src/plugin/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",
