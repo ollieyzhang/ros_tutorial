@@ -17,14 +17,14 @@ add_custom_target(tutorial_beginner_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_custom_target(_tutorial_beginner_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tutorial_beginner" "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" ""
-)
-
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
 add_custom_target(_tutorial_beginner_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tutorial_beginner" "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" ""
+)
+
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
+add_custom_target(_tutorial_beginner_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "tutorial_beginner" "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" ""
 )
 
 #
@@ -60,9 +60,9 @@ add_custom_target(tutorial_beginner_generate_messages_cpp
 add_dependencies(tutorial_beginner_generate_messages tutorial_beginner_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_dependencies(tutorial_beginner_generate_messages_cpp _tutorial_beginner_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
+add_dependencies(tutorial_beginner_generate_messages_cpp _tutorial_beginner_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
 add_dependencies(tutorial_beginner_generate_messages_cpp _tutorial_beginner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,9 +101,9 @@ add_custom_target(tutorial_beginner_generate_messages_eus
 add_dependencies(tutorial_beginner_generate_messages tutorial_beginner_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_dependencies(tutorial_beginner_generate_messages_eus _tutorial_beginner_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
+add_dependencies(tutorial_beginner_generate_messages_eus _tutorial_beginner_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
 add_dependencies(tutorial_beginner_generate_messages_eus _tutorial_beginner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -142,9 +142,9 @@ add_custom_target(tutorial_beginner_generate_messages_lisp
 add_dependencies(tutorial_beginner_generate_messages tutorial_beginner_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_dependencies(tutorial_beginner_generate_messages_lisp _tutorial_beginner_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
+add_dependencies(tutorial_beginner_generate_messages_lisp _tutorial_beginner_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
 add_dependencies(tutorial_beginner_generate_messages_lisp _tutorial_beginner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -183,9 +183,9 @@ add_custom_target(tutorial_beginner_generate_messages_nodejs
 add_dependencies(tutorial_beginner_generate_messages tutorial_beginner_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_dependencies(tutorial_beginner_generate_messages_nodejs _tutorial_beginner_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
+add_dependencies(tutorial_beginner_generate_messages_nodejs _tutorial_beginner_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
 add_dependencies(tutorial_beginner_generate_messages_nodejs _tutorial_beginner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -224,9 +224,9 @@ add_custom_target(tutorial_beginner_generate_messages_py
 add_dependencies(tutorial_beginner_generate_messages tutorial_beginner_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
-add_dependencies(tutorial_beginner_generate_messages_py _tutorial_beginner_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv" NAME_WE)
+add_dependencies(tutorial_beginner_generate_messages_py _tutorial_beginner_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/yan/ros_tutorial/src/tutorial_beginner/msg/person.msg" NAME_WE)
 add_dependencies(tutorial_beginner_generate_messages_py _tutorial_beginner_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -283,7 +283,7 @@ if(TARGET std_msgs_generate_messages_nodejs)
 endif()
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tutorial_beginner)
-  install(CODE "execute_process(COMMAND \"/home/yan/python3_ws/rl_env/bin/python\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tutorial_beginner\")")
+  install(CODE "execute_process(COMMAND \"/usr/bin/python2\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tutorial_beginner\")")
   # install generated code
   install(
     DIRECTORY ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/tutorial_beginner

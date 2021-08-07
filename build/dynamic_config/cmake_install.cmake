@@ -37,15 +37,15 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/dynamic_config" TYPE FILE FILES "/home/yan/ros_tutorial/devel/lib/python3/dist-packages/dynamic_config/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/dynamic_config" TYPE FILE FILES "/home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config/__init__.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/home/yan/python3_ws/rl_env/bin/python" -m compileall "/home/yan/ros_tutorial/devel/lib/python3/dist-packages/dynamic_config/cfg")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages/dynamic_config" TYPE DIRECTORY FILES "/home/yan/ros_tutorial/devel/lib/python3/dist-packages/dynamic_config/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/dynamic_config" TYPE DIRECTORY FILES "/home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config/cfg")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

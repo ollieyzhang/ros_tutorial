@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yan/ros_tutorial/build
 include tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums.dir/progress.make
 
 tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums:
-	cd /home/yan/ros_tutorial/build/tutorial_beginner && ../catkin_generated/env_cached.sh /home/yan/python3_ws/rl_env/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tutorial_beginner /home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv 
+	cd /home/yan/ros_tutorial/build/tutorial_beginner && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tutorial_beginner /home/yan/ros_tutorial/src/tutorial_beginner/srv/nums.srv 
 
 _tutorial_beginner_generate_messages_check_deps_nums: tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums
 _tutorial_beginner_generate_messages_check_deps_nums: tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums.dir/build.make

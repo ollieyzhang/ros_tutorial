@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "/home/yan/ros_tutorial/devel/include/dynamic_config/drConfig.h"
   "/home/yan/ros_tutorial/devel/share/dynamic_config/docs/drConfig.dox"
   "/home/yan/ros_tutorial/devel/share/dynamic_config/docs/drConfig-usage.dox"
-  "/home/yan/ros_tutorial/devel/lib/python3/dist-packages/dynamic_config/cfg/drConfig.py"
+  "/home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config/cfg/drConfig.py"
   "/home/yan/ros_tutorial/devel/share/dynamic_config/docs/drConfig.wikidoc"
 )
 

@@ -1,2 +1,2 @@
 dynamic_config:meta_package:plugin:tf_package:tutorial_advanced:tutorial_beginner:urdf_package
--DPYTHON_EXECUTABLE:FILEPATH=/home/yan/python3_ws/rl_env/bin/python -DCATKIN_DEVEL_PREFIX=/home/yan/ros_tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/yan/ros_tutorial/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/yan/ros_tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/yan/ros_tutorial/install -G Unix Makefiles

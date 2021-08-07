@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yan/ros_tutorial/build
 include tutorial_advanced/CMakeFiles/_tutorial_advanced_generate_messages_check_deps_addintsActionFeedback.dir/progress.make
 
 tutorial_advanced/CMakeFiles/_tutorial_advanced_generate_messages_check_deps_addintsActionFeedback:
-	cd /home/yan/ros_tutorial/build/tutorial_advanced && ../catkin_generated/env_cached.sh /home/yan/python3_ws/rl_env/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tutorial_advanced /home/yan/ros_tutorial/devel/share/tutorial_advanced/msg/addintsActionFeedback.msg actionlib_msgs/GoalStatus:tutorial_advanced/addintsFeedback:std_msgs/Header:actionlib_msgs/GoalID
+	cd /home/yan/ros_tutorial/build/tutorial_advanced && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py tutorial_advanced /home/yan/ros_tutorial/devel/share/tutorial_advanced/msg/addintsActionFeedback.msg tutorial_advanced/addintsFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus
 
 _tutorial_advanced_generate_messages_check_deps_addintsActionFeedback: tutorial_advanced/CMakeFiles/_tutorial_advanced_generate_messages_check_deps_addintsActionFeedback
 _tutorial_advanced_generate_messages_check_deps_addintsActionFeedback: tutorial_advanced/CMakeFiles/_tutorial_advanced_generate_messages_check_deps_addintsActionFeedback.dir/build.make

@@ -271,36 +271,6 @@ tutorial_beginner_generate_messages/fast:
 .PHONY : tutorial_beginner_generate_messages/fast
 
 # Convenience name for target.
-tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule:
-	cd /home/yan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
-.PHONY : tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
-
-# Convenience name for target.
-turtle_publisher_c: tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
-
-.PHONY : turtle_publisher_c
-
-# fast build rule for target.
-turtle_publisher_c/fast:
-	cd /home/yan/ros_tutorial/build && $(MAKE) -f tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/build.make tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/build
-.PHONY : turtle_publisher_c/fast
-
-# Convenience name for target.
-tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule:
-	cd /home/yan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
-.PHONY : tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
-
-# Convenience name for target.
-_tutorial_beginner_generate_messages_check_deps_person: tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
-
-.PHONY : _tutorial_beginner_generate_messages_check_deps_person
-
-# fast build rule for target.
-_tutorial_beginner_generate_messages_check_deps_person/fast:
-	cd /home/yan/ros_tutorial/build && $(MAKE) -f tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/build.make tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/build
-.PHONY : _tutorial_beginner_generate_messages_check_deps_person/fast
-
-# Convenience name for target.
 tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums.dir/rule:
 	cd /home/yan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums.dir/rule
 .PHONY : tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_nums.dir/rule
@@ -344,6 +314,36 @@ client_c: tutorial_beginner/CMakeFiles/client_c.dir/rule
 client_c/fast:
 	cd /home/yan/ros_tutorial/build && $(MAKE) -f tutorial_beginner/CMakeFiles/client_c.dir/build.make tutorial_beginner/CMakeFiles/client_c.dir/build
 .PHONY : client_c/fast
+
+# Convenience name for target.
+tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule:
+	cd /home/yan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
+.PHONY : tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
+
+# Convenience name for target.
+turtle_publisher_c: tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/rule
+
+.PHONY : turtle_publisher_c
+
+# fast build rule for target.
+turtle_publisher_c/fast:
+	cd /home/yan/ros_tutorial/build && $(MAKE) -f tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/build.make tutorial_beginner/CMakeFiles/turtle_publisher_c.dir/build
+.PHONY : turtle_publisher_c/fast
+
+# Convenience name for target.
+tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule:
+	cd /home/yan/ros_tutorial/build && $(MAKE) -f CMakeFiles/Makefile2 tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
+.PHONY : tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
+
+# Convenience name for target.
+_tutorial_beginner_generate_messages_check_deps_person: tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/rule
+
+.PHONY : _tutorial_beginner_generate_messages_check_deps_person
+
+# fast build rule for target.
+_tutorial_beginner_generate_messages_check_deps_person/fast:
+	cd /home/yan/ros_tutorial/build && $(MAKE) -f tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/build.make tutorial_beginner/CMakeFiles/_tutorial_beginner_generate_messages_check_deps_person.dir/build
+.PHONY : _tutorial_beginner_generate_messages_check_deps_person/fast
 
 # Convenience name for target.
 tutorial_beginner/CMakeFiles/tutorial_beginner_gennodejs.dir/rule:
@@ -714,12 +714,12 @@ help:
 	@echo "... subscriber_person_c"
 	@echo "... tutorial_beginner_generate_messages_nodejs"
 	@echo "... tutorial_beginner_generate_messages"
-	@echo "... turtle_publisher_c"
-	@echo "... _tutorial_beginner_generate_messages_check_deps_person"
 	@echo "... rebuild_cache"
 	@echo "... _tutorial_beginner_generate_messages_check_deps_nums"
 	@echo "... tutorial_beginner_generate_messages_cpp"
 	@echo "... client_c"
+	@echo "... turtle_publisher_c"
+	@echo "... _tutorial_beginner_generate_messages_check_deps_person"
 	@echo "... tutorial_beginner_gennodejs"
 	@echo "... tutorial_beginner_geneus"
 	@echo "... tutorial_beginner_generate_messages_py"
