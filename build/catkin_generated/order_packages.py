@@ -2,4 +2,4 @@
 source_root_dir = '/home/yan/ros_tutorial/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/yan/ros_tutorial/devel;/home/yan/python3_ws/devel;/opt/ros/kinetic'.split(';') if '/home/yan/ros_tutorial/devel;/home/yan/python3_ws/devel;/opt/ros/kinetic' != '' else []
+underlay_workspaces = '/opt/ros/kinetic'.split(';') if '/opt/ros/kinetic' != '' else []

@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/yan/ros_tutorial/build/tf_package/cmake_install.cmake")
   include("/home/yan/ros_tutorial/build/tutorial_advanced/cmake_install.cmake")
   include("/home/yan/ros_tutorial/build/tutorial_beginner/cmake_install.cmake")
+  include("/home/yan/ros_tutorial/build/urdf_gazebo/cmake_install.cmake")
   include("/home/yan/ros_tutorial/build/urdf_package/cmake_install.cmake")
 
 endif()

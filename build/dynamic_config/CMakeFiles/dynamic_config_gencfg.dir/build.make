@@ -61,7 +61,7 @@ dynamic_config/CMakeFiles/dynamic_config_gencfg: /home/yan/ros_tutorial/devel/li
 /home/yan/ros_tutorial/devel/include/dynamic_config/drConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.py.template
 /home/yan/ros_tutorial/devel/include/dynamic_config/drConfig.h: /opt/ros/kinetic/share/dynamic_reconfigure/templates/ConfigType.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yan/ros_tutorial/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/dr.cfg: /home/yan/ros_tutorial/devel/include/dynamic_config/drConfig.h /home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config/cfg/drConfig.py"
-	cd /home/yan/ros_tutorial/build/dynamic_config && ../catkin_generated/env_cached.sh /home/yan/ros_tutorial/src/dynamic_config/cfg/dr.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/yan/ros_tutorial/devel/share/dynamic_config /home/yan/ros_tutorial/devel/include/dynamic_config /home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config
+	cd /home/yan/ros_tutorial/build/dynamic_config && ../catkin_generated/env_cached.sh /home/yan/ros_tutorial/build/dynamic_config/setup_custom_pythonpath.sh /home/yan/ros_tutorial/src/dynamic_config/cfg/dr.cfg /opt/ros/kinetic/share/dynamic_reconfigure/cmake/.. /home/yan/ros_tutorial/devel/share/dynamic_config /home/yan/ros_tutorial/devel/include/dynamic_config /home/yan/ros_tutorial/devel/lib/python2.7/dist-packages/dynamic_config
 
 /home/yan/ros_tutorial/devel/share/dynamic_config/docs/drConfig.dox: /home/yan/ros_tutorial/devel/include/dynamic_config/drConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate /home/yan/ros_tutorial/devel/share/dynamic_config/docs/drConfig.dox

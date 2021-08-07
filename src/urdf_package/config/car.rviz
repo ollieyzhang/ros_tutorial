@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /Status1
         - /Grid1
+        - /Odometry1
       Splitter Ratio: 0.5
     Tree Height: 757
   - Class: rviz/Selection
@@ -76,7 +77,17 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         front_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -91,17 +102,105 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        support:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: false
+      Keep: 1
+      Name: Odometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.300000012
+        Head Radius: 0.100000001
+        Shaft Length: 1
+        Shaft Radius: 0.0500000007
+        Value: Arrow
+      Topic: /odom
+      Unreliable: false
+      Value: false
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        back_wheel:
+          Value: true
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera:
+          Value: true
+        front_wheel:
+          Value: true
+        laser:
+          Value: true
+        left_wheel:
+          Value: true
+        odom:
+          Value: true
+        right_wheel:
+          Value: true
+        support:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        odom:
+          base_footprint:
+            base_link:
+              back_wheel:
+                {}
+              camera:
+                {}
+              front_wheel:
+                {}
+              left_wheel:
+                {}
+              right_wheel:
+                {}
+              support:
+                laser:
+                  {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_footprint
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
@@ -122,7 +221,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.8993814
+      Distance: 6.93582249
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -137,10 +236,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: -0.039601665
+      Pitch: 0.995397925
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.96540153
+      Yaw: 4.18040276
     Saved: ~
 Window Geometry:
   Displays:
@@ -158,5 +257,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 65
+  X: 1985
   Y: 24
